@@ -10,9 +10,19 @@ Performs Topological Sort (Kahn’s algorithm).
 Finds both Shortest and Longest (Critical) paths on the DAG.
 Prints results and metrics for each graph.
 Project structure
-assignment4/ ├── data/ │ └── tasks.json ├── src/ │ ├── main/java/ │ │ ├── model/ – Graph and Edge classes │ │ ├── scc/ – TarjanSCC and CondensationBuilder │ │ ├── topo/ – Topological sort (Kahn) │ │ ├── dag/ – Shortest and Longest path algorithms │ │ └── util/ – JSON loader, metrics, and Main │ └── test/java/ – Tests for SCC, Topo, and DAG └── pom.xml
+assignment4/ 
+├── data/ 
+│ └── tasks.json 
+├── src/ 
+│ ├── main/java/ 
+│ │ ├── model/ – Graph and Edge classes 
+│ │ ├── scc/ – TarjanSCC and CondensationBuilder 
+│ │ ├── topo/ – Topological sort (Kahn) 
+│ │ ├── dag/ – Shortest and Longest path algorithms 
+│ │ └── util/ – JSON loader, metrics, and Main 
+│ └── test/java/ – Tests for SCC, Topo, and DAG 
+└── pom.xml
 
-yaml
 
 How to run
 mvn clean compile
@@ -27,8 +37,7 @@ medium (10 vertices)
 large (15 vertices)
 
  Example output
-yaml
-Копировать код
+
 ==== GRAPH 1 ====
 SCC (component per vertex): [3, 3, 3, 2, 1, 0]
 Condensation DAG size: 4
@@ -52,11 +61,13 @@ Large	15	13	13	28	38	15	39	36	9	12
 Chart
 
 Critical Path Length vs Graph Size
-<img width="1030" height="594" alt="Снимок экрана 2025-11-03 005009" src="https://github.com/user-attachments/assets/d41328c4-f033-4142-a589-3ec00d8f158f" />
+
+<img width="1003" height="592" alt="Снимок экрана 2025-11-03 004859" src="https://github.com/user-attachments/assets/4f8e66ce-c229-4b5a-8b1a-4a059a284b69" />
 
 
 SCC Count vs Graph Size
-<img width="1503" height="262" alt="Снимок экрана 2025-11-03 005735" src="https://github.com/user-attachments/assets/9bf31a00-c382-4415-a54a-90e8a800769d" />
+<img width="1030" height="594" alt="Снимок экрана 2025-11-03 005009" src="https://github.com/user-attachments/assets/4cc37d84-c7ba-4544-afc2-6e333607bc56" />
+
 
 The chart clearly shows that as the number of vertices increases,
 the critical path length grows — meaning the algorithms are working as expected.
