@@ -1,15 +1,15 @@
-Assignment 4 – Graph Algorithms (SCC, Condensation, Topo Sort, DAG Paths)
+## Assignment 4 – Graph Algorithms (SCC, Condensation, Topo Sort, DAG Paths)
 This project was made for the DAA course.
 It shows how to analyze graphs and find relationships between components using SCC, Topo Sort, and DAG path algorithms.
 
-What the program does
+## What the program does
 Reads graph data from data/tasks.json.
 Finds Strongly Connected Components using Tarjan’s algorithm.
 Builds Condensation Graph (turns SCC into DAG).
 Performs Topological Sort (Kahn’s algorithm).
 Finds both Shortest and Longest (Critical) paths on the DAG.
 Prints results and metrics for each graph.
-Project structure
+## Project structure
 assignment4/ 
 ├── data/ 
 │ └── tasks.json 
@@ -24,7 +24,7 @@ assignment4/
 └── pom.xml
 
 
-How to run
+## How to run
 mvn clean compile
 mvn exec:java "-Dexec.mainClass=util.Main" "-Dexec.args=data/tasks.json"
 Input data
@@ -36,7 +36,7 @@ medium (10 vertices)
 
 large (15 vertices)
 
- Example output
+## Example output
 
 ==== GRAPH 1 ====
 SCC (component per vertex): [3, 3, 3, 2, 1, 0]
@@ -58,7 +58,7 @@ Small	6	4	4	12	12	6	12	9	3	3
 Medium	10	8	8	19	22	10	24	21	6	7
 Large	15	13	13	28	38	15	39	36	9	12
 
-Chart
+## Chart
 
 Critical Path Length vs Graph Size
 
@@ -72,7 +72,7 @@ SCC Count vs Graph Size
 The chart clearly shows that as the number of vertices increases,
 the critical path length grows — meaning the algorithms are working as expected.
 
-Conclusion
+## Conclusion
 Tarjan’s algorithm correctly finds SCCs.
 
 The condensation graph (DAG) is built correctly.
