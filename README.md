@@ -36,6 +36,7 @@ medium (10 vertices)
 
 large (15 vertices)
 
+
 ## Example output
 
 ==== GRAPH 1 ====
@@ -52,7 +53,7 @@ Critical path length: 22
 SCC (component per vertex): [12, 12, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 Condensation DAG size: 13
 Critical path length: 38
-Results summary
+## Results summary
 Graph	Vertices (n)	SCC Count	DAG Size	Shortest Path Length	Critical Path Length	scc_dfs	topo_pop	topo_push	dag_relax	dag_relax_long
 Small	6	4	4	12	12	6	12	9	3	3
 Medium	10	8	8	19	22	10	24	21	6	7
